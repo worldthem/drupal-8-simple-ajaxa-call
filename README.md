@@ -73,7 +73,7 @@ function my_ajax_load() {
       $("#ajax-target").html(data);
    });
 }
-< 
+ 
 ```
 
 ###### where
