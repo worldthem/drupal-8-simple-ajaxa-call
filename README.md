@@ -1,11 +1,11 @@
 # This plugin is for Drupal 8.x
 The plugin  is developed to made a simple ajax call from your theme or module and get response, similar like in wordpress
 
-1) ** Create a file in your theme or module call it functions.php
-2) ** In this file functions.php create any function with any name for example let's said
+##### 1) Create a file in your theme or module call it functions.php 
+##### 2) In this file functions.php create any function with any name for example let's said 
 
  Example php
-Markup :  ` 
+Markup :  `code`
 function get_data_from_node() {
 // Get post data
 $limit = \Drupal::request()->request->get("limit"); // OR $limit = $_POST['limit'];
@@ -27,9 +27,9 @@ $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
              echo "<p>". $val->body->value."</p>"  ; // here will show the article content
         }
 } 
-`
 
-3) HTML CODE, this code is from your *.html.twig
+
+##### 3) HTML CODE, this code is from your *.html.twig
 Markup :  ` 
 
 <a class="btn" href="#" onclick="my_ajax_load(); return false;">Ajax Test</a>
@@ -48,7 +48,7 @@ function my_ajax_load() {
 </script>
 `
 
-  URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
+  ##### URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
   
   where:
    "/callajax" - is url // please don't change keep how is it
@@ -58,7 +58,7 @@ function my_ajax_load() {
 
 if you want to make ajax call from your module 
 
-1) add to post var type where type is the name of module
+##### 1) add to post var type where **type** is the name of module
 example javascript for module 
 
 <script>
@@ -69,9 +69,9 @@ function my_ajax_load() {
    });
 }
 </script>
-  where 
+ ###### where 
     'type' - is a module name, your module name
  
 
 
-That's it! Simply An Easy
+##### That's it! Simply An Easy
