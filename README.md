@@ -1,11 +1,11 @@
 # This plugin is for Drupal 8.x
 The plugin  is developed to made a simple ajax call from your theme or module and get response, similar like in wordpress
 
-1) ** Create a file in your theme or module call it functions.php **
-2) ** In this file functions.php create any function with any name for example let's said  **
+1) ** Create a file in your theme or module call it functions.php
+2) ** In this file functions.php create any function with any name for example let's said
 
  Example php
-Markup :  `code()`
+Markup :  ` 
 function get_data_from_node() {
 // Get post data
 $limit = \Drupal::request()->request->get("limit"); // OR $limit = $_POST['limit'];
@@ -27,16 +27,17 @@ $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
              echo "<p>". $val->body->value."</p>"  ; // here will show the article content
         }
 } 
-Markup : ```php
-         ```
+`
 
 3) HTML CODE, this code is from your *.html.twig
+Markup :  ` 
+
 <a class="btn" href="#" onclick="my_ajax_load(); return false;">Ajax Test</a>
 
 <div id="ajax-target">Ajax goes here!!!</div>
 
 4) jQuerey CODE
-
+Markup :  ` 
  <script>
 function my_ajax_load() {
   var str = "id=22&message=where id= '?'";
@@ -45,6 +46,8 @@ function my_ajax_load() {
    });
 }
 </script>
+`
+
   URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
   
   where:
