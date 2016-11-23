@@ -63,7 +63,7 @@ function my_ajax_load() {
 ##### 1) add to post var type where **type** is the name of module
 example javascript for module 
 
-##### 4) jQuerey CODE
+##### How will look the jQuerey CODE
  ```javascript
 function my_ajax_load() {
   var str = "id=22&message=where id= '?'";
