@@ -4,8 +4,8 @@ The plugin  is developed to made a simple ajax call from your theme or module an
 ##### 1) Create a file in your theme or module call it functions.php 
 ##### 2) In this file functions.php create any function with any name for example let's said 
 
- Example php
-Markup :  `code`
+###### Example php
+```php
 function get_data_from_node() {
 // Get post data
 $limit = \Drupal::request()->request->get("limit"); // OR $limit = $_POST['limit'];
@@ -27,14 +27,15 @@ $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
              echo "<p>". $val->body->value."</p>"  ; // here will show the article content
         }
 } 
-
+```
 
 ##### 3) HTML CODE, this code is from your *.html.twig
-Markup :  ` 
-
+ 
+```html
 <a class="btn" href="#" onclick="my_ajax_load(); return false;">Ajax Test</a>
 
 <div id="ajax-target">Ajax goes here!!!</div>
+```
 
 4) jQuerey CODE
 Markup :  ` 
