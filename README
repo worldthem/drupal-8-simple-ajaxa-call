@@ -1,0 +1,20 @@
+##This plugin is for Drupal 8.x 
+The plugin is a infinite ajax scroll of Articles
+
+
+For this i created a simple module : ajaxpagination (check drupal/modules/ajaxpagination/)
+
+On ajaxpagination.routing.yml i add 2 links '/ajaxcall/{id}' where i will made ajax call by jQuery and it will return me the next Article
+
+the second one is 'http://website.com/blogajax' this link will show the last added article
+
+well you can change it and use the plugin for example make it simple http://website.com/blog/ 
+
+when you made the changes in ajaxpagination.routing.yml don't forget to clean the cache, from admin panel of drupal http://your-website.com/admin/config/development/performance 
+
+
+
+
+
+
+
