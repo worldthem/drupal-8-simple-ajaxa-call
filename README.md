@@ -58,7 +58,7 @@ function my_ajax_load() {
 - 'id' - simple post var
 - 'limit' - simple post var
 
-if you want to make ajax call from your module 
+#### if you want to make ajax call from your module 
 
 ##### 1) add to post var type where **type** is the name of module
 example javascript for module 
