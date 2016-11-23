@@ -1,0 +1,4 @@
+name: 'Simple ajax call'
+description: 'Make life easy. This is a simple plugin what give to you the permision to create a function from your theme and make any ajax call. Developed by Corneliu'
+core: 8.x
+type: module

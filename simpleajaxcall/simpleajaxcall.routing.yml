@@ -1,0 +1,7 @@
+simpleajaxcall.callajax:
+  path: '/callajax'
+  defaults:
+    _controller: '\Drupal\simpleajaxcall\Controller\SimpleAjaxCallController::callajax'
+    _title: 'Ajax'
+  requirements:
+    _permission: 'access content'
