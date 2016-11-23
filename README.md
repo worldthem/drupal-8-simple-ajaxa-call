@@ -1,7 +1,7 @@
 # This plugin is for Drupal 8.x
 The plugin  is developed to made a simple ajax call from your theme or module and get response, similar like in wordpress
-#### Install this module on your drupal folder "modules"
-#### After activation the plugin Clear cache from admin panel, from there http://yourwebsitename.com/admin/config/development/performance
+## Install this module on your drupal folder "modules"
+## After activation the plugin Clear cache from admin panel, from there http://yourwebsitename.com/admin/config/development/performance
  
 ##### 1) Create a file in your theme or module call it functions.php 
 ##### 2) In this file functions.php create any function with any name for example let's said 
