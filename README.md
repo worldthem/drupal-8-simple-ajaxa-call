@@ -38,6 +38,7 @@ $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
 ```
 
 ##### 4) jQuerey CODE
+
 ```javascript 
 function my_ajax_load() {
   var str = "id=22&message=where id= '?'";
@@ -48,10 +49,9 @@ function my_ajax_load() {
 
  ```
  
-
-  ##### URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
+##### URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
   
-  ###### where:
+###### where:
   -- "/callajax" - is url // please don't change, keep how is it **/callajax**
   -- 'action' - is the name of your function in our case is "get_data_from_node" you can rename how you like
   -- 'id' - simple post var
@@ -63,16 +63,17 @@ if you want to make ajax call from your module
 example javascript for module 
 
 ##### 4) jQuerey CODE
-<script>
+ ```javascript
 function my_ajax_load() {
   var str = "id=22&message=where id= '?'";
   $.post("/callajax", {'action':'get_data_from_node','type':'MyModuleName','id':'6', 'limit':'5' }, function(data) {
       $("#ajax-target").html(data);
    });
 }
-</script>
+< 
 ```
- ###### where 
+
+###### where 
    -- 'type' - is a module name, your module name
  
 
