@@ -52,10 +52,10 @@ function my_ajax_load() {
 ##### URL TO SEND POST DATA ALL THE TIME IS THIS  http://mywebsite.com/callajax 
   
 ###### where:
-  -- "/callajax" - is url // please don't change, keep how is it **/callajax**
-  -- 'action' - is the name of your function in our case is "get_data_from_node" you can rename how you like
-  -- 'id' - simple post var
-  -- 'limit' - simple post var
+  -"/callajax" - is url // please don't change, keep how is it **/callajax**
+  -'action' - is the name of your function in our case is "get_data_from_node" you can rename how you like
+  -'id' - simple post var
+  -'limit' - simple post var
 
 if you want to make ajax call from your module 
 
@@ -74,7 +74,7 @@ function my_ajax_load() {
 ```
 
 ###### where 
-   -- 'type' - is a module name, your module name
+   -'type' - is a module name, your module name
  
 
 
