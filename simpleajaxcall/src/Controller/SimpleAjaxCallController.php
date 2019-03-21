@@ -21,8 +21,8 @@ class SimpleAjaxCallController extends ControllerBase {
   public function callajax(){
       // get post data "type" and "action"
      $type = \Drupal::request()->request->get("type");
-     $function = \Drupal::request()->request->get("action"); 
-     $function = htmlspecialchars($function);
+     $method = \Drupal::request()->request->get("action"); 
+     $method = htmlspecialchars($method);
      $type = htmlspecialchars($type);
      
       // get path to theme or module
@@ -35,11 +35,13 @@ class SimpleAjaxCallController extends ControllerBase {
       }
       
       require $url_file; // import file from module or theme
+   
+       $ajax = new Functions();
       
-      if (!function_exists($function)) { // check if function exist in functions.php from in theme or module
-           exit ("<p> this function  $function () doesn't exist in your file functions.php  </p>");
+      if (!method_exists($ajax, $method) ) { // check if method exist in functions.php from in theme or module
+           exit ('<p> this Method  $method () does not exist in your file functions.php  </p>');
       }
-     $function(); // call function by name
+     $ajax->$method(); // call function by name
      
     exit(); // that's it
     
