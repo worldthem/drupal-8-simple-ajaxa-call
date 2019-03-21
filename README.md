@@ -4,7 +4,7 @@ The plugin  is developed to made a simple ajax call from your theme or module an
 ## After activating the module Clear cache from admin panel, from here http://yourwebsitename.com/admin/config/development/performance
  
 ##### 1) Create a file in your theme or module call it functions.php 
-##### 2) In this file functions.php create any method with any name for example let's said 
+##### 2) In this file functions.php create any method inside class Functions(keep this name for the class, other way won't work) with any name for example let's said 
 
 ###### Example php
  
