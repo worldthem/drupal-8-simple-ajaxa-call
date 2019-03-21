@@ -4,11 +4,16 @@ The plugin  is developed to made a simple ajax call from your theme or module an
 ## After activating the module Clear cache from admin panel, from here http://yourwebsitename.com/admin/config/development/performance
  
 ##### 1) Create a file in your theme or module call it functions.php 
-##### 2) In this file functions.php create any function with any name for example let's said 
+##### 2) In this file functions.php create any method with any name for example let's said 
 
 ###### Example php
+ 
+}
+
 ```php
-function get_data_from_node() {
+class Functions{
+
+public function get_data_from_node() {
 // Get post data
 $limit = \Drupal::request()->request->get("limit"); // OR $limit = $_POST['limit'];
 $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
@@ -28,7 +33,10 @@ $id = \Drupal::request()->request->get("id"); // OR $limit = $_POST['id'];
       foreach( $nodes as $val){
              echo "<p>". $val->body->value."</p>"  ; // here will show the article content
         }
-} 
+} //end method get_data_from_node
+
+} //end class Functions
+
 ```
 
 ##### 3) HTML CODE, this code is from your *.html.twig
