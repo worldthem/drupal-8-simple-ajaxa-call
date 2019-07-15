@@ -3,15 +3,15 @@ The plugin  is developed to made a simple ajax call from your theme or module an
 ## Install this module on your drupal folder "modules"
 ## After activating the module Clear cache from admin panel, from here http://yourwebsitename.com/admin/config/development/performance
  
-##### 1) Create a file in your theme or module call it functions.php 
-##### 2) In this file functions.php create any method inside class Functions(keep this name for the class, other way won't work) with any name for example let's said 
+##### 1) Create a file in your theme or module call it ajaxmethods.php 
+##### 2) In this file ajaxmethods.php create any method inside class AjaxMethods(keep this name for the class, other way won't work) with any name of methods for example let's say 
 
 ###### Example php
  
 }
 
 ```php
-class Functions{
+class AjaxMethods{
 
 public function get_data_from_node() {
 // Get post data
