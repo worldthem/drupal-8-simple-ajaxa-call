@@ -27,7 +27,7 @@ class SimpleAjaxCallController extends ControllerBase {
      
       // get path to theme or module
      $path= empty($type) ?  \Drupal::theme()->getActiveTheme()->getPath() :  drupal_get_path('module', $type);
-     $url_file= $path."/functions.php";
+     $url_file= $path."/ajaxmethods.php";
      
      
       if (!file_exists($url_file)) { // check if file functions.php exist in theme or module
@@ -36,7 +36,7 @@ class SimpleAjaxCallController extends ControllerBase {
       
       require $url_file; // import file from module or theme
    
-       $ajax = new Functions();
+       $ajax = new AjaxMethods();
       
       if (!method_exists($ajax, $method) ) { // check if method exist in functions.php from in theme or module
            exit ('<p> this Method  $method () does not exist in your file functions.php  </p>');
